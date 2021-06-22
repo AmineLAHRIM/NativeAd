@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
         // These assets aren't guaranteed to be in every UnifiedNativeAd, so it's important to
         // check before trying to display them.
         if (nativeAd.body == null) {
-            adView.bodyView.visibility = View.INVISIBLE
+            adView.bodyView.visibility = View.GONE
         } else {
             adView.bodyView.visibility = View.VISIBLE
             (adView.bodyView as TextView).text = nativeAd.body
